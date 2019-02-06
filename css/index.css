@@ -331,6 +331,70 @@ img {
     padding: 3%;
   }
 }
+.details {
+  margin-top: 3%;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.details .detail {
+  width: 49%;
+  padding: 5% 5% 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.details .detail:first-child {
+  border-right: 1px solid lightgray;
+}
+.details .detail h3 {
+  margin: 5% 0;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.details .detail p {
+  font-size: 1.6rem;
+  margin-bottom: 2%;
+  line-height: 1.25;
+  text-align: center;
+}
+.details .detail button {
+  width: 40%;
+  margin: 10% auto 10%;
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-left: 0;
+  padding: 3% 0;
+  border-radius: 5px;
+  border: 2px solid orangered;
+  color: orangered;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.25rem;
+  cursor: pointer;
+  outline: none;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .details .detail button {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 20%;
+    padding: 1.5%;
+  }
+}
+@media (min-width: 1000px) {
+  .details .detail button {
+    width: 50%;
+    padding: 3%;
+  }
+}
+.details .detail img {
+  width: 80px;
+}
 footer {
   width: 100%;
   background-color: darkgray;

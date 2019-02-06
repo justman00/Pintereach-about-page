@@ -49,23 +49,25 @@ burger.addEventListener("click", () => {
 
 // animate the button
 // it gets bigger on hover and back to normal on leaving it
-const btn = document.querySelector(".custom-btn");
+const btns = document.querySelectorAll(".custom-btn");
 
-btn.addEventListener("mouseover", () => {
-  TweenMax.to(btn, 0.5, {
-    scale: 1.2,
-    backgroundColor: "#FF4500",
-    color: "#fff",
-    ease: Bounce.easeOut
+btns.forEach(btn => {
+  btn.addEventListener("mouseover", () => {
+    TweenMax.to(btn, 0.5, {
+      scale: 1.2,
+      backgroundColor: "#FF4500",
+      color: "#fff",
+      ease: Bounce.easeOut
+    });
   });
-});
 
-btn.addEventListener("mouseout", () => {
-  TweenMax.to(btn, 0.5, {
-    scale: 1,
-    color: "#FF4500",
-    backgroundColor: "#fff",
-    ease: Back.easeIn
+  btn.addEventListener("mouseout", () => {
+    TweenMax.to(btn, 0.5, {
+      scale: 1,
+      color: "#FF4500",
+      backgroundColor: "#fff",
+      ease: Back.easeIn
+    });
   });
 });
 
