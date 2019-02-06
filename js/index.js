@@ -20,7 +20,7 @@ burger.addEventListener("click", () => {
         visibility: "visible",
         height: "100%",
         opacity: 1,
-        padding: "5%",
+        // padding: "5%",
         ease: Back.easeOut
       },
       0.5
