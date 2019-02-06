@@ -41,7 +41,7 @@ burger.addEventListener("click", () => {
       visibility: "hidden",
       height: 0,
       padding: 0,
-      delay: 2.5
+      delay: 2
     });
     toggle = true;
   }
@@ -49,47 +49,47 @@ burger.addEventListener("click", () => {
 
 // animate the button
 // it gets bigger on hover and back to normal on leaving it
-const btn = document.querySelector(".custom-btn");
+// const btn = document.querySelector(".custom-btn");
 
-btn.addEventListener("mouseover", () => {
-  TweenMax.to(btn, 0.5, {
-    scale: 1.2,
-    backgroundColor: "#FF4500",
-    color: "#fff",
-    ease: Bounce.easeOut
-  });
-});
+// btn.addEventListener("mouseover", () => {
+//   TweenMax.to(btn, 0.5, {
+//     scale: 1.2,
+//     backgroundColor: "#FF4500",
+//     color: "#fff",
+//     ease: Bounce.easeOut
+//   });
+// });
 
-btn.addEventListener("mouseout", () => {
-  TweenMax.to(btn, 0.5, {
-    scale: 1,
-    color: "#FF4500",
-    backgroundColor: "#fff",
-    ease: Back.easeIn
-  });
-});
+// btn.addEventListener("mouseout", () => {
+//   TweenMax.to(btn, 0.5, {
+//     scale: 1,
+//     color: "#FF4500",
+//     backgroundColor: "#fff",
+//     ease: Back.easeIn
+//   });
+// });
 
-// animate the icons in my Features section, they rotate now
-const icons = document.querySelectorAll(".icon");
+// // animate the icons in my Features section, they rotate now
+// const icons = document.querySelectorAll(".icon");
 
-let rotate = 45;
+// let rotate = 45;
 
-// console.log(icons);
+// // console.log(icons);
 
-icons.forEach(icon => {
-  // console.log(icon);
-  icon.addEventListener("mouseover", () => {
-    TweenMax.to(icon, 0.5, {
-      rotation: 405
-    });
-  });
-  icon.addEventListener("mouseout", () => {
-    TweenMax.to(icon, 0.5, {
-      rotation: 45,
-      delay: 1.2
-    });
-  });
-});
+// icons.forEach(icon => {
+//   // console.log(icon);
+//   icon.addEventListener("mouseover", () => {
+//     TweenMax.to(icon, 0.5, {
+//       rotation: 405
+//     });
+//   });
+//   icon.addEventListener("mouseout", () => {
+//     TweenMax.to(icon, 0.5, {
+//       rotation: 45,
+//       delay: 1.2
+//     });
+//   });
+// });
 
 // make everything appear on load
 window.addEventListener("load", () => {
