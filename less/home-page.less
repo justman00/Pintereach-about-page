@@ -68,3 +68,41 @@
     }
   }
 }
+
+.jobs {
+  margin-top: 3%;
+  height: 35vh;
+  background-image: linear-gradient(to right, rgba(#fff, 0), rgba(#fff, 0.5)),
+    url(../img/office-2.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  width: 100%;
+
+  .flex-it(flex-end, center);
+
+  &-content {
+    background-color: #fff;
+    position: absolute;
+    width: 30%;
+    padding: 2%;
+    right: 25px;
+
+    h3 {
+      font-size: 2rem;
+      font-weight: 900;
+      margin-bottom: 10%;
+    }
+
+    p {
+      font-size: 1.6rem;
+      line-height: 1.25;
+      margin-bottom: 4%;
+    }
+
+    .custom-btn {
+      .style-btn();
+      margin-bottom: 0;
+    }
+  }
+}

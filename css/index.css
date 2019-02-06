@@ -269,6 +269,68 @@ img {
 .investors-imgs .logo-img img {
   width: 100%;
 }
+.jobs {
+  margin-top: 3%;
+  height: 35vh;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5)), url(../img/office-2.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.jobs-content {
+  background-color: #fff;
+  position: absolute;
+  width: 30%;
+  padding: 2%;
+  right: 25px;
+}
+.jobs-content h3 {
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 10%;
+}
+.jobs-content p {
+  font-size: 1.6rem;
+  line-height: 1.25;
+  margin-bottom: 4%;
+}
+.jobs-content .custom-btn {
+  width: 40%;
+  margin: 10% auto 10%;
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-left: 0;
+  padding: 3% 0;
+  border-radius: 5px;
+  border: 2px solid orangered;
+  color: orangered;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.25rem;
+  cursor: pointer;
+  outline: none;
+  margin-bottom: 0;
+}
+@media (min-width: 768px) {
+  .jobs-content .custom-btn {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 20%;
+    padding: 1.5%;
+  }
+}
+@media (min-width: 1000px) {
+  .jobs-content .custom-btn {
+    width: 50%;
+    padding: 3%;
+  }
+}
 footer {
   width: 100%;
   background-color: darkgray;
