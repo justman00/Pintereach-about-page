@@ -88,6 +88,14 @@
     padding: 2%;
     right: 25px;
 
+    @media @tablet {
+      right: 0;
+    }
+
+    @media @tablet {
+      width: 50%;
+    }
+
     h3 {
       font-size: 2rem;
       font-weight: 900;
@@ -103,6 +111,8 @@
     .custom-btn {
       .style-btn();
       margin-bottom: 0;
+      text-transform: uppercase;
+      margin-top: 5%;
     }
   }
 }
@@ -110,6 +120,8 @@
 .details {
   margin-top: 3%;
   .flex-it(space-between, baseline);
+  padding-bottom: 1.5%;
+  border-bottom: 1px solid lightgray;
 
   .detail {
     width: 49%;
@@ -137,10 +149,75 @@
     button {
       .style-btn();
       margin: 0 auto;
+      text-transform: uppercase;
     }
 
     img {
       width: 80px;
+    }
+  }
+}
+
+// contact section
+
+.contact {
+  margin-top: 5%;
+  margin-bottom: 10%;
+  h3 {
+    margin: 5% 0;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  .items {
+    .flex-it(space-between, baseline);
+
+    .item {
+      width: 22%;
+      .flex-it(space-between, center);
+      @media @tablet {
+        .flex-it();
+        flex-direction: column;
+      }
+      i {
+        font-size: 3rem;
+        color: orangered;
+      }
+
+      .text {
+        display: flex;
+        flex-direction: column;
+
+        @media @tablet {
+          justify-content: center;
+          align-items: center;
+        }
+
+        h4 {
+          font-size: 1.8rem;
+          font-weight: 500;
+          margin-bottom: 10%;
+
+          @media @tablet {
+            margin-top: 10%;
+          }
+        }
+
+        a {
+          color: orangered;
+          font-size: 1.6rem;
+        }
+
+        p {
+          font-size: 1.6rem;
+          margin-bottom: 2%;
+
+          @media @tablet {
+            text-align: center;
+            line-height: 1.25;
+          }
+        }
+      }
     }
   }
 }

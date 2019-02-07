@@ -148,6 +148,11 @@ img {
   max-width: 1000px;
   margin: 0 auto;
 }
+@media (max-width: 800px) {
+  .container {
+    padding: 0 5%;
+  }
+}
 .header {
   height: 35vh;
   background-image: linear-gradient(to right bottom, rgba(255, 69, 0, 0.8), rgba(255, 165, 0, 0.8)), url(../img/panorama.jpg);
@@ -161,7 +166,6 @@ img {
 }
 .header .navigation {
   position: absolute;
-  max-width: 1000px;
   margin: 2% auto;
   display: flex;
   justify-content: center;
@@ -288,6 +292,16 @@ img {
   padding: 2%;
   right: 25px;
 }
+@media (max-width: 800px) {
+  .jobs-content {
+    right: 0;
+  }
+}
+@media (max-width: 800px) {
+  .jobs-content {
+    width: 50%;
+  }
+}
 .jobs-content h3 {
   font-size: 2rem;
   font-weight: 900;
@@ -299,8 +313,8 @@ img {
   margin-bottom: 4%;
 }
 .jobs-content .custom-btn {
-  width: 40%;
-  margin: 10% auto 10%;
+  width: 50%;
+  margin: 14% auto 10%;
   font-size: 1.3rem;
   font-weight: 500;
   margin-left: 0;
@@ -316,18 +330,18 @@ img {
   cursor: pointer;
   outline: none;
   margin-bottom: 0;
+  text-transform: uppercase;
+  margin-top: 5%;
 }
-@media (min-width: 768px) {
+@media (max-width: 800px) {
   .jobs-content .custom-btn {
-    margin-top: 5%;
-    margin-bottom: 5%;
-    width: 20%;
-    padding: 1.5%;
+    width: 80%;
+    margin: 5% auto 0;
   }
 }
-@media (min-width: 1000px) {
+@media (max-width: 500px) {
   .jobs-content .custom-btn {
-    width: 50%;
+    width: 40%;
     padding: 3%;
   }
 }
@@ -336,6 +350,8 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  padding-bottom: 1.5%;
+  border-bottom: 1px solid lightgray;
 }
 .details .detail {
   width: 49%;
@@ -360,8 +376,8 @@ img {
   text-align: center;
 }
 .details .detail button {
-  width: 40%;
-  margin: 10% auto 10%;
+  width: 50%;
+  margin: 14% auto 10%;
   font-size: 1.3rem;
   font-weight: 500;
   margin-left: 0;
@@ -377,59 +393,124 @@ img {
   cursor: pointer;
   outline: none;
   margin: 0 auto;
+  text-transform: uppercase;
 }
-@media (min-width: 768px) {
+@media (max-width: 800px) {
   .details .detail button {
-    margin-top: 5%;
-    margin-bottom: 5%;
-    width: 20%;
-    padding: 1.5%;
+    width: 80%;
+    margin: 5% auto 0;
   }
 }
-@media (min-width: 1000px) {
+@media (max-width: 500px) {
   .details .detail button {
-    width: 50%;
+    width: 40%;
     padding: 3%;
   }
 }
 .details .detail img {
   width: 80px;
 }
+.contact {
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+.contact h3 {
+  margin: 5% 0;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.contact .items {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.contact .items .item {
+  width: 22%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 800px) {
+  .contact .items .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+.contact .items .item i {
+  font-size: 3rem;
+  color: orangered;
+}
+.contact .items .item .text {
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 800px) {
+  .contact .items .item .text {
+    justify-content: center;
+    align-items: center;
+  }
+}
+.contact .items .item .text h4 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 10%;
+}
+@media (max-width: 800px) {
+  .contact .items .item .text h4 {
+    margin-top: 10%;
+  }
+}
+.contact .items .item .text a {
+  color: orangered;
+  font-size: 1.6rem;
+}
+.contact .items .item .text p {
+  font-size: 1.6rem;
+  margin-bottom: 2%;
+}
+@media (max-width: 800px) {
+  .contact .items .item .text p {
+    text-align: center;
+    line-height: 1.25;
+  }
+}
 footer {
   width: 100%;
   background-color: darkgray;
   color: #fff;
   margin: 0 auto;
-  padding: 10% 5% 5%;
+  padding: 5% 5%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-@media (min-width: 768px) {
+@media (max-width: 800px) {
   footer {
     padding: 5% 5% 3%;
   }
 }
-@media (min-width: 1000px) {
+@media (max-width: 500px) {
   footer {
-    padding: 3% 5%;
+    padding: 10% 5% 5%;
   }
 }
 footer .footer-main {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  max-width: 500px;
+  max-width: 1000px;
 }
-@media (min-width: 768px) {
+@media (max-width: 800px) {
   footer .footer-main {
     max-width: 800px;
   }
 }
-@media (min-width: 1000px) {
+@media (max-width: 500px) {
   footer .footer-main {
-    max-width: 1000px;
+    max-width: 500px;
   }
 }
 footer address {
@@ -439,57 +520,52 @@ footer address {
   flex-direction: column;
 }
 footer address h3 {
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-weight: 700;
   margin-bottom: 15%;
 }
-@media (min-width: 768px) {
+@media (max-width: 500px) {
   footer address h3 {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 }
 footer address p {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   margin-bottom: 10%;
 }
-@media (min-width: 768px) {
+@media (max-width: 500px) {
   footer address p {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 }
 footer .final-text {
   width: 50%;
 }
 footer .final-text p {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   line-height: 1.5;
 }
-@media (min-width: 768px) {
+@media (max-width: 500px) {
   footer .final-text p {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 }
 footer .final-text .email {
   margin-top: 5%;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
-@media (min-width: 768px) {
+@media (max-width: 800px) {
   footer .final-text .email {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 }
 footer .copyright {
-  margin-top: 10%;
-  font-size: 1.4rem;
+  margin-top: 5%;
+  font-size: 1.6rem;
   letter-spacing: 0.25rem;
 }
-@media (min-width: 768px) {
+@media (max-width: 500px) {
   footer .copyright {
-    font-size: 1.6rem;
-  }
-}
-@media (min-width: 1000px) {
-  footer .copyright {
-    margin-top: 5%;
+    margin-top: 10%;
   }
 }
