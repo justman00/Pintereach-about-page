@@ -176,8 +176,15 @@ img {
   font-size: 5rem;
   color: #fff;
   font-weight: 900;
-  font-family: "Roboto slab", serif;
+  font-family: "Helvetica", sans-serif;
   margin-top: 13%;
+}
+@media (max-width: 500px) {
+  .header .navigation .name {
+    margin-top: 15%;
+    font-size: 4rem;
+    font-weight: 700;
+  }
 }
 .header .navigation nav {
   display: flex;
@@ -192,11 +199,22 @@ img {
 .header .navigation nav .burger-logo img {
   width: 100%;
 }
+@media (max-width: 500px) {
+  .header .navigation nav .burger-logo {
+    width: 8%;
+    margin: 3%;
+  }
+}
 .header .navigation nav .nav-items {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 60%;
+}
+@media (max-width: 500px) {
+  .header .navigation nav .nav-items {
+    width: 80%;
+  }
 }
 .header .navigation nav .nav-items a {
   padding: 0;
@@ -218,6 +236,11 @@ img {
   justify-content: space-between;
   align-items: baseline;
 }
+@media (max-width: 500px) {
+  .intro {
+    flex-direction: column;
+  }
+}
 .intro h3 {
   font-size: 2rem;
   font-size: "Helvetica", sans-serif;
@@ -231,6 +254,11 @@ img {
   flex-direction: column;
   width: 45%;
 }
+@media (max-width: 500px) {
+  .intro .description {
+    width: 100%;
+  }
+}
 .intro .description p {
   font-size: 1.6rem;
   line-height: 1.25;
@@ -238,6 +266,19 @@ img {
 }
 .intro .stats {
   width: 40%;
+}
+@media (max-width: 500px) {
+  .intro .stats {
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+@media (max-width: 500px) {
+  .intro .stats h3 {
+    display: none;
+  }
 }
 .intro .stats .num {
   margin-bottom: 5%;
@@ -257,18 +298,39 @@ img {
 .investors {
   margin-top: 6%;
 }
+@media (max-width: 500px) {
+  .investors {
+    margin-top: 15%;
+  }
+}
 .investors h2 {
   font-size: 2.4rem;
   font-weight: 900;
   margin-bottom: 0;
+}
+@media (max-width: 500px) {
+  .investors h2 {
+    margin-bottom: 5%;
+  }
 }
 .investors-imgs {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .investors-imgs {
+    flex-wrap: wrap;
+    margin-top: 10%;
+  }
+}
 .investors-imgs .logo-img {
   width: 20%;
+}
+@media (max-width: 500px) {
+  .investors-imgs .logo-img {
+    width: 45%;
+  }
 }
 .investors-imgs .logo-img img {
   width: 100%;
@@ -285,6 +347,13 @@ img {
   justify-content: flex-end;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .jobs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .jobs-content {
   background-color: #fff;
   position: absolute;
@@ -294,12 +363,13 @@ img {
 }
 @media (max-width: 800px) {
   .jobs-content {
+    width: 50%;
     right: 0;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 500px) {
   .jobs-content {
-    width: 50%;
+    width: 80%;
   }
 }
 .jobs-content h3 {
@@ -307,10 +377,21 @@ img {
   font-weight: 900;
   margin-bottom: 10%;
 }
+@media (max-width: 500px) {
+  .jobs-content h3 {
+    margin-bottom: 5%;
+    font-size: 1.8rem;
+  }
+}
 .jobs-content p {
   font-size: 1.6rem;
   line-height: 1.25;
   margin-bottom: 4%;
+}
+@media (max-width: 500px) {
+  .jobs-content p {
+    font-size: 1.4rem;
+  }
 }
 .jobs-content .custom-btn {
   width: 50%;
@@ -345,6 +426,12 @@ img {
     padding: 3%;
   }
 }
+@media (max-width: 500px) {
+  .jobs-content .custom-btn {
+    width: 70%;
+    margin-bottom: 5%;
+  }
+}
 .details {
   margin-top: 3%;
   display: flex;
@@ -352,6 +439,12 @@ img {
   align-items: baseline;
   padding-bottom: 1.5%;
   border-bottom: 1px solid lightgray;
+}
+@media (max-width: 500px) {
+  .details {
+    flex-direction: column;
+    margin-top: 10%;
+  }
 }
 .details .detail {
   width: 49%;
@@ -361,8 +454,25 @@ img {
   align-items: center;
   flex-direction: column;
 }
+@media (max-width: 500px) {
+  .details .detail {
+    width: 100%;
+    padding-bottom: 7%;
+  }
+}
 .details .detail:first-child {
   border-right: 1px solid lightgray;
+}
+@media (max-width: 500px) {
+  .details .detail:first-child {
+    border-right: 0;
+    border-bottom: 1px solid lightgray;
+  }
+}
+@media (max-width: 500px) {
+  .details .detail:last-child {
+    margin-top: 7%;
+  }
 }
 .details .detail h3 {
   margin: 5% 0;
@@ -371,7 +481,7 @@ img {
 }
 .details .detail p {
   font-size: 1.6rem;
-  margin-bottom: 2%;
+  margin-bottom: 5%;
   line-height: 1.25;
   text-align: center;
 }
@@ -407,6 +517,11 @@ img {
     padding: 3%;
   }
 }
+@media (max-width: 500px) {
+  .details .detail button {
+    width: 80%;
+  }
+}
 .details .detail img {
   width: 80px;
 }
@@ -414,15 +529,33 @@ img {
   margin-top: 5%;
   margin-bottom: 10%;
 }
+@media (max-width: 500px) {
+  .contact {
+    margin-top: 10%;
+  }
+}
 .contact h3 {
   margin: 5% 0;
   font-size: 2rem;
   font-weight: 700;
 }
+@media (max-width: 500px) {
+  .contact h3 {
+    margin-bottom: 10%;
+  }
+}
 .contact .items {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+}
+@media (max-width: 500px) {
+  .contact .items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 .contact .items .item {
   width: 22%;
@@ -436,6 +569,17 @@ img {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .contact .items .item:last-child {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 500px) {
+  .contact .items .item {
+    width: 100%;
+    margin-bottom: 8%;
   }
 }
 .contact .items .item i {
@@ -454,7 +598,7 @@ img {
 }
 .contact .items .item .text h4 {
   font-size: 1.8rem;
-  font-weight: 500;
+  font-weight: 700;
   margin-bottom: 10%;
 }
 @media (max-width: 800px) {
@@ -469,6 +613,7 @@ img {
 .contact .items .item .text p {
   font-size: 1.6rem;
   margin-bottom: 2%;
+  color: gray;
 }
 @media (max-width: 800px) {
   .contact .items .item .text p {

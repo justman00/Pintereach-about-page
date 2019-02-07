@@ -13,6 +13,10 @@
 
   .flex-it(center, flex-start);
 
+  // @media @mobile {
+  //   align-items: center;
+  // }
+
   .navigation {
     position: absolute;
     // max-width: 1000px;
@@ -25,8 +29,14 @@
       font-size: 5rem;
       color: #fff;
       font-weight: 900;
-      font-family: "Roboto slab", serif;
+      font-family: "Helvetica", sans-serif;
       margin-top: 13%;
+
+      @media @mobile {
+        margin-top: 15%;
+        font-size: 4rem;
+        font-weight: 700;
+      }
     }
 
     nav {
@@ -42,11 +52,21 @@
         img {
           width: 100%;
         }
+
+        @media @mobile {
+          width: 8%;
+          margin: 3%;
+          // padding: 5%;
+        }
       }
 
       .nav-items {
         .flex-it(space-between);
         width: 60%;
+
+        @media @mobile {
+          width: 80%;
+        }
 
         a {
           padding: 0;

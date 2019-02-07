@@ -41,7 +41,7 @@ burger.addEventListener("click", () => {
       visibility: "hidden",
       height: 0,
       padding: 0,
-      delay: 2
+      delay: 1.5
     });
     toggle = true;
   }
